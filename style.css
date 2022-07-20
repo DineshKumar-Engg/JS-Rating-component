@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.root{
+--White: hsl(0, 0%, 100%);
+--Light_Grey: hsl(217, 12%, 63%);
+--Medium_Grey: hsl(216, 12%, 54%);
+--Dark_Blue: hsl(213, 19%, 18%);
+--Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.attribution { 
+  font-size: 15px; 
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+body {
+  margin:10%;
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  Font-size: 15px;
+  display: block;
+  align-items: center;
+}
+li{
+  list-style: none;
+}
+.main , .final{
+  height:60vh;
+  margin:6%;
+  padding:25px;
+  background-color:hsl(213, 19%, 18%);
+  border-radius:25px;
+  max-width: 500px;
+  flex-direction: column;
+}
+.main h1{
+  margin:0.3rem 0 1rem;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color:hsl(0, 0%, 100%);
+}
+.main p{
+  margin-bottom: 0.7rem;
+  color:hsl(217, 12%, 63%);
+}
+.main img {
+  padding:0.5rem;
+  border-radius:50%;
+  background-color:hsl(214, 16%, 26%);
+}
+.main ul{
+  margin-bottom:0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom:1rem;
+  flex-wrap: nowrap;
+}
+.main ul li button{
+  width:3rem;
+  height:3rem;
+  border-radius:50%;
+  border:none;
+  padding:0.1rem;
+  background-color:hsl(214, 16%, 28%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main ul li button:hover{
+  background-color: hsl(25, 97%, 53%);
+}
+.main ul li button:focus{
+  background-color:hsl(217, 12%, 63%);
+}
+.submit-button{
+  padding:2px;
+  width:100%;
+  height:3rem;
+  border-radius:50px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor:pointer;
+  margin-top:15px;
+}
+.submit-button:hover{
+  background-color:white;
+  color:hsl(25, 97%, 53%);
+  font-size: 17px;
+}
+.final.hidden{
+  display: none;
+}
+.final{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.final img{
+  display:block;
+  margin-top:0px ;
+}
+.result{
+  width:70%;
+  height:10%;
+  color:hsl(25, 97%, 53%);
+  align-items: center;
+  background-color:hsl(213, 19%, 18%);
+  margin-top:0.2rem;
+  margin-bottom:0.3rem;
+  text-align: center;
+  padding:0.4rem;
+  border-radius:20px;
+}
+
+.final h2{
+  color:hsl(0, 0%, 100%);
+  font-size:20px;
+  padding-bottom: 5px;
+}
+.end{
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+}
