@@ -16,9 +16,11 @@
   font-size: 15px; 
   text-align: center;
   margin-top: 1rem;
+  
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+  text-decoration: none;
 }
 body {
   margin:10%;
