@@ -23,24 +23,25 @@
   text-decoration: none;
 }
 body {
-  margin:10%;
+  margin:10% 30%;
   background-color: hsl(216, 12%, 8%);
   font-family: 'Overpass', sans-serif;
   Font-size: 15px;
   display: block;
-  align-items: center;
+  
 }
 li{
   list-style: none;
 }
 .main , .final{
   height:60vh;
-  margin:6%;
   padding:25px;
   background-color:hsl(213, 19%, 18%);
   border-radius:25px;
-  max-width: 500px;
+  width:400px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .main h1{
   margin:0.3rem 0 1rem;
@@ -133,4 +134,14 @@ li{
 .end{
   color: hsl(216, 12%, 54%);
   text-align: center;
+}
+
+@media (max-width:600px) {
+  .main , .final{
+    width:300px;
+}
+body{
+  margin-left:7%;
+  margin-right:2%;
+}
 }
